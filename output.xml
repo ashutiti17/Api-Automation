@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20250504 18:02:05.406" rpa="false" schemaversion="4">
+<suite id="s1" name="Test1" source="C:\Users\USER\PycharmProjects\API Automation\Robot2\Testcases\Test1.robot">
+<test id="s1-t1" name="Login Test" line="13">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Browesr}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20250504 18:02:05.539" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20250504 18:02:05.538" endtime="20250504 18:02:09.474"/>
+</kw>
+<kw name="SignIn Name" library="Login">
+<arg>${name}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${user_name}</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250504 18:02:09.476" level="INFO">Typing text 'standard_user' into text field '//input[@id='user-name']'.</msg>
+<status status="PASS" starttime="20250504 18:02:09.476" endtime="20250504 18:02:09.572"/>
+</kw>
+<status status="PASS" starttime="20250504 18:02:09.475" endtime="20250504 18:02:09.572"/>
+</kw>
+<kw name="SignIn Password" library="Login">
+<arg>${Password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${signin_pw}</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250504 18:02:09.573" level="INFO">Typing text 'secret_sauce' into text field '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20250504 18:02:09.573" endtime="20250504 18:02:09.645"/>
+</kw>
+<status status="PASS" starttime="20250504 18:02:09.572" endtime="20250504 18:02:09.645"/>
+</kw>
+<kw name="Click Login Page" library="Login">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${signup_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250504 18:02:09.646" level="INFO">Clicking element '//input[@id='login-button']'.</msg>
+<status status="PASS" starttime="20250504 18:02:09.646" endtime="20250504 18:02:09.732"/>
+</kw>
+<status status="PASS" starttime="20250504 18:02:09.645" endtime="20250504 18:02:09.732"/>
+</kw>
+<kw name="Verify Home Page" library="Login">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Swag Labs</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20250504 18:02:09.747" level="INFO">Current page contains text 'Swag Labs'.</msg>
+<status status="PASS" starttime="20250504 18:02:09.733" endtime="20250504 18:02:09.749"/>
+</kw>
+<status status="PASS" starttime="20250504 18:02:09.733" endtime="20250504 18:02:09.749"/>
+</kw>
+<status status="PASS" starttime="20250504 18:02:05.538" endtime="20250504 18:02:09.749"/>
+</test>
+<status status="PASS" starttime="20250504 18:02:05.407" endtime="20250504 18:02:09.750"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test1">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
