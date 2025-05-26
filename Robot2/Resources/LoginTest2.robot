@@ -14,3 +14,4 @@ Open My Browser
      Open Browser    ${Url}    ${Browesr}
      Maximize Browser Window
 Login Functionality
+     Open Browser
